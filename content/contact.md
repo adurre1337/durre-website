@@ -10,6 +10,6 @@ hide_meta: true
 
 I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.
 
-**Email:** hello@example.com
+**Email:** alex@durre.net
 
 I typically respond within a couple of days.
