@@ -62,7 +62,7 @@ a:hover {
 
 .container {
   width: 100%;
-  max-width: 390px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -108,6 +108,7 @@ hr {
    Both spans share the same grid cell — no absolute positioning. */
 .site-title {
   display: grid;
+  grid-template-columns: 100%;
   place-items: center;
   width: 100%;
   margin-bottom: 1.25rem;
@@ -177,7 +178,7 @@ hr {
   border: none;
   border-top: 1px solid rgba(57, 219, 57, 0.25);
   margin-inline: auto;
-  max-width: 390px;
+  max-width: 760px;
 }
 
 /* ------------------------------------------------------------
