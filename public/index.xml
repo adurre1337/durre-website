@@ -6,8 +6,15 @@
     <description>Recent content in Home on .hack//Durre</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 10:46:52 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Made This Website</title>
+      <link>http://localhost:1313/posts/tech/how-i-made-this-website/</link>
+      <pubDate>Wed, 04 Mar 2026 10:46:52 -0600</pubDate>
+      <guid>http://localhost:1313/posts/tech/how-i-made-this-website/</guid>
+      <description>&lt;p&gt;This was a deep, dark rabbit hole that I fell into while trying to migrate myself off of Gmail a few months ago and use something more personalized.&lt;/p&gt;&#xA;&lt;p&gt;I had worked with Porkbun somewhat in the past, and saw that they had integrated with Proton for email hosting, plus the cost of the &amp;ldquo;durre.net&amp;rdquo; domain was super cheap so using Porkbun was a no brainer. Once I got my email setup and through the slog of moving over important logins, I started poking around other product offerings and found that they also offer web hosting. I didn&amp;rsquo;t really have any ideas for what I would put on a website, but I figured it would be kinda cool to have one.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
