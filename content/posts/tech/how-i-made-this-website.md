@@ -21,6 +21,7 @@ So I had the groundwork for how I'd kick-off this website:
     Step 3. Push all this out to a GitHub repo for source control and CI/CD integration.
     Step 4. Publish the content to Porkbun's web hosting platform.
 (edit: this textbox looks pretty sweet, I do not like the scroll bar however)
+(edit edit: no scrollbar on mobile, better, but the text wrapping looks horrible)
 
 Seems simple enough, and honestly, it really was.
 
