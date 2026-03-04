@@ -327,8 +327,8 @@ hr {
 }
 
 .post-list__date {
-  font-size: 0.8rem;
-  color: rgba(57, 219, 57, 0.5);
+  font-size: 0.75rem;
+  color: rgba(57, 219, 57, 0.45);
   white-space: nowrap;
   flex-shrink: 0;
   text-shadow: none;
@@ -568,4 +568,94 @@ img:hover {
   .site-title {
     padding-bottom: 2em;
   }
+}
+
+/* ------------------------------------------------------------
+   Hangman
+   ------------------------------------------------------------ */
+.hangman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hm-scaffold {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: rgb(57, 219, 57);
+  text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9);
+  text-align: left;
+}
+
+.hm-word {
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  color: rgb(57, 219, 57);
+}
+
+.hm-wrong {
+  font-size: 0.75rem;
+  color: rgba(57, 219, 57, 0.45);
+  text-shadow: none;
+  min-height: 1.2em;
+}
+
+.hm-msg {
+  font-size: 0.85rem;
+  color: rgb(219, 67, 181);
+  text-shadow: 0.06em 0 0.5px rgba(200, 200, 0, 0.5);
+  min-height: 1.2em;
+}
+
+.hm-keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  max-width: 480px;
+}
+
+.hm-key {
+  background: none;
+  border: 1px solid rgba(57, 219, 57, 0.35);
+  color: rgb(57, 219, 57);
+  font-family: inherit;
+  font-size: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  text-shadow: none;
+  transition: border-color 0.1s, color 0.1s;
+}
+
+.hm-key:hover:not(:disabled) {
+  border-color: rgb(57, 219, 57);
+  text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9);
+}
+
+.hm-key--used {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.hm-key--wrong {
+  color: rgb(219, 67, 181);
+  border-color: rgba(219, 67, 181, 0.35);
+}
+
+.hm-new {
+  background: none;
+  border: none;
+  color: rgba(57, 219, 57, 0.6);
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-shadow: none;
+  padding: 0;
+}
+
+.hm-new:hover {
+  color: rgb(57, 219, 57);
 }
