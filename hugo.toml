@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://durre.net/'
 languageCode = 'en-us'
-title = 'Durre'
+title = '.hack//Durre'
 theme = 'durre'
 
 [params]

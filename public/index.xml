@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Durre</title>
-    <link>https://example.org/</link>
-    <description>Recent content in Home on Durre</description>
+    <title>Home on .hack//Durre</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on .hack//Durre</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://example.org/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.org/about/</guid>
-      <description>&lt;h2 id=&#34;hello-im-durre&#34;&gt;Hello, I&amp;rsquo;m Durre&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a passionate creator and writer. This is my little corner of the internet where I share my thoughts, projects, and experiences.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;&#xA;&lt;p&gt;I enjoy exploring ideas at the intersection of technology, design, and creativity. Whether it&amp;rsquo;s building something new or writing about what I&amp;rsquo;ve learned, I aim to create things that are useful and meaningful.&lt;/p&gt;&#xA;&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to reach out through the &lt;a href=&#34;https://example.org/contact&#34;&gt;contact page&lt;/a&gt; — I&amp;rsquo;d love to hear from you.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;hello-im-durre&#34;&gt;Hello, I&amp;rsquo;m Durre&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a passionate creator and writer. This is my little corner of the internet where I share my thoughts, projects, and experiences.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;&#xA;&lt;p&gt;I enjoy exploring ideas at the intersection of technology, design, and creativity. Whether it&amp;rsquo;s building something new or writing about what I&amp;rsquo;ve learned, I aim to create things that are useful and meaningful.&lt;/p&gt;&#xA;&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to reach out through the &lt;a href=&#34;http://localhost:1313/contact&#34;&gt;contact page&lt;/a&gt; — I&amp;rsquo;d love to hear from you.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://example.org/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.org/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;d love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:hello@example.com&#34;&gt;hello@example.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I typically respond within a couple of days.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello, World!</title>
-      <link>https://example.org/posts/hello-world/</link>
+      <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/hello-world/</guid>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
       <description>&lt;p&gt;Welcome to my new site! I&amp;rsquo;m excited to finally have a place to share my thoughts and projects.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-i-started-this-blog&#34;&gt;Why I Started This Blog&lt;/h2&gt;&#xA;&lt;p&gt;Writing helps me think more clearly. By putting ideas into words, I&amp;rsquo;m forced to really understand them — or admit that I don&amp;rsquo;t.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-to-expect&#34;&gt;What to Expect&lt;/h2&gt;&#xA;&lt;p&gt;I plan to write about things I&amp;rsquo;m working on, things I&amp;rsquo;m learning, and the occasional random thought that seems worth sharing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://example.org/posts/getting-started-with-hugo/</link>
+      <link>http://localhost:1313/posts/getting-started-with-hugo/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/getting-started-with-hugo/</guid>
+      <guid>http://localhost:1313/posts/getting-started-with-hugo/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; is one of the fastest static site generators available. Here&amp;rsquo;s why I chose it for this site.&lt;/p&gt;&#xA;&lt;h2 id=&#34;speed&#34;&gt;Speed&lt;/h2&gt;&#xA;&lt;p&gt;Hugo builds sites in milliseconds, even for sites with thousands of pages. There&amp;rsquo;s no runtime to spin up — it just outputs static HTML files.&lt;/p&gt;&#xA;&lt;h2 id=&#34;simplicity&#34;&gt;Simplicity&lt;/h2&gt;&#xA;&lt;p&gt;No database. No server-side code. Just Markdown files, templates, and a single binary.&lt;/p&gt;&#xA;&lt;h2 id=&#34;flexibility&#34;&gt;Flexibility&lt;/h2&gt;&#xA;&lt;p&gt;Hugo&amp;rsquo;s templating system is powerful enough for complex sites, yet simple enough to get started quickly. The theme system makes it easy to customize the look and feel.&lt;/p&gt;</description>
     </item>
   </channel>

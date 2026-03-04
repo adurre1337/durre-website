@@ -1,12 +1,5 @@
 <footer class="site-footer">
   <div class="container">
     <p>&copy; {{ now.Year }} {{ .Site.Params.author | default .Site.Title }} &mdash; built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></p>
-    {{ with .Site.Params.friends }}
-    <ul class="site-footer__links">
-      {{ range . }}
-      <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></li>
-      {{ end }}
-    </ul>
-    {{ end }}
   </div>
 </footer>
