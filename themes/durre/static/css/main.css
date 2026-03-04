@@ -8,7 +8,10 @@
    ------------------------------------------------------------ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 body {
   background-color: #131313;
@@ -29,6 +32,7 @@ body {
   flex-direction: column;
   animation: fade-in 2s;
   text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9);
+  overflow-x: hidden;
 }
 
 @keyframes fade-in {
@@ -121,6 +125,9 @@ hr {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  max-width: 90vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
   opacity: 0;
   color: rgb(219, 67, 181);
   text-shadow: 0.06em 0 0.5px rgba(200, 200, 0, 0.5);
