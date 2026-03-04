@@ -2,7 +2,7 @@
 <article class="post">
   <header class="post__header">
     <h1 class="post__title">{{ .Title }}</h1>
-    {{ if .Date }}
+    {{ if and .Date (not .Params.hide_meta) }}
     <p class="post__meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
       {{ with .Params.author }} &mdash; {{ . }}{{ end }}
