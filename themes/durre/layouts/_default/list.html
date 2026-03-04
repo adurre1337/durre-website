@@ -1,12 +1,27 @@
 {{ define "main" }}
-<header class="page-header">
+{{ $sections := .Sections }}
+{{ if and (not $sections) .Parent.IsSection }}{{ $sections = .Parent.Sections }}{{ end }}
+
+<header class="page-header{{ if $sections }} page-header--compact{{ end }}">
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<p class="page-header__desc">{{ . }}</p>{{ end }}
 </header>
 
-{{ if .Pages }}
+{{ if $sections }}
+<nav class="section-nav" aria-label="Section navigation">
+  <ul class="section-nav__list">
+    {{ range $sections }}
+    <li class="section-nav__item">
+      <a href="{{ .RelPermalink }}" class="section-nav__link{{ if eq $.RelPermalink .RelPermalink }} section-nav__link--active{{ end }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
+
+{{ if .RegularPages }}
 <ul class="post-list">
-  {{ range .Pages }}
+  {{ range .RegularPages }}
   <li class="post-list__item">
     <time class="post-list__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
     <div>
@@ -19,4 +34,8 @@
 {{ else }}
 <p class="empty-state">// no posts yet</p>
 {{ end }}
+
+<footer class="post__footer">
+  <a href="{{ .Parent.RelPermalink }}">[ &larr; back ]</a>
+</footer>
 {{ end }}
