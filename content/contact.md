@@ -8,8 +8,8 @@ hide_meta: true
 
 ## Get in Touch
 
-I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.
+Feel free to hit me up if there are any questions or comments about the stuff I put out on here!
 
-**Email:** alex@durre.net
+Email: alex@durre.net
 
-I typically respond within a couple of days.
+I will typically respond within a couple of days.

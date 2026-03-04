@@ -19,14 +19,18 @@
 </nav>
 {{ end }}
 
-{{ if .RegularPages }}
+{{ $pages := .RegularPages }}
+{{ if .Sections }}
+  {{ $pages = where .Site.RegularPages "Section" .Section }}
+{{ end }}
+
+{{ if $pages }}
 <ul class="post-list">
-  {{ range .RegularPages }}
+  {{ range $pages.ByDate.Reverse }}
   <li class="post-list__item">
     <time class="post-list__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
     <div>
-      <div class="post-list__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
-      {{ with .Summary }}<p class="post-list__excerpt">{{ . }}</p>{{ end }}
+      {{ if $.Sections }}<span class="post-list__section">{{ .Parent.Title }}</span><span class="post-list__sep"> \\ </span>{{ end }}<span class="post-list__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
     </div>
   </li>
   {{ end }}
@@ -34,6 +38,7 @@
 {{ else }}
 <p class="empty-state">// no posts yet</p>
 {{ end }}
+
 
 <footer class="post__footer">
   <a href="{{ .Parent.RelPermalink }}">[ &larr; back ]</a>
