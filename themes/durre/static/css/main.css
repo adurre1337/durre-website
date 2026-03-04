@@ -101,20 +101,23 @@ hr {
   padding-block: 2rem 0.5rem;
 }
 
-/* Fade title: shows title by default, tagline on hover */
+/* Fade title: shows title by default, tagline on hover.
+   Both spans share the same grid cell — no absolute positioning. */
 .site-title {
-  position: relative;
-  display: inline-block;
+  display: grid;
+  place-items: center;
+  width: 100%;
   margin-bottom: 1.25rem;
-  min-height: 2rem;
 }
 
 .site-title__text,
 .site-title__alt {
-  display: block;
+  grid-area: 1 / 1;
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.05em;
+  text-align: center;
+  width: 100%;
   color: rgb(57, 219, 57);
   text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9);
   transition: opacity ease-in-out 0.5s;
@@ -122,14 +125,6 @@ hr {
 }
 
 .site-title__alt {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  max-width: 90vw;
-  overflow: hidden;
-  text-overflow: ellipsis;
   opacity: 0;
   color: rgb(219, 67, 181);
   text-shadow: 0.06em 0 0.5px rgba(200, 200, 0, 0.5);
@@ -476,19 +471,8 @@ img:hover {
     background-size: 6px 6px;
   }
 
-  /* Touch screens can't hover — hide the swap effect and remove the
-     absolutely-positioned element that overflows on narrow viewports */
-  .site-title {
-    min-height: auto;
-  }
-
-  .site-title__alt {
-    display: none;
-  }
-
   /* Prevent code blocks from pushing the layout wide */
   .post__body pre {
-    max-width: 100%;
     white-space: pre-wrap;
     word-break: break-all;
   }
