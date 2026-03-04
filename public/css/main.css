@@ -553,7 +553,6 @@ img:hover {
   }
 
   /* Stack date + title vertically on narrow screens */
-  .post-list__item,
   .post-card {
     flex-direction: column;
     gap: 0.1rem;
