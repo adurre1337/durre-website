@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="hero__tagline">{{ .Site.Params.description }}</p>
+</section>
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<div class="post-cards">
+  <p class="post-cards__heading">// recent posts</p>
+  <ul class="post-cards__list">
+    {{ range first 5 $posts }}
+    <li class="post-card">
+      <time class="post-card__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <span class="post-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ if gt (len $posts) 5 }}
+  <p style="text-align:center; margin-top:1rem; font-size:0.85rem;">
+    <a href="/posts">[ all posts ]</a>
+  </p>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

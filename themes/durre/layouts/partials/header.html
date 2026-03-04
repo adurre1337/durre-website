@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">
+      <a href="{{ .Site.BaseURL }}" class="site-title__text">{{ .Site.Title }}</a>
+      <span class="site-title__alt">{{ .Site.Params.tagline }}</span>
+    </h1>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="site-nav__list">
+        {{ range .Site.Menus.main }}
+        <li class="site-nav__item">
+          <a href="{{ .URL }}" class="site-nav__link{{ if $.IsHome }}{{ if eq .Name "Home" }} site-nav__link--active{{ end }}{{ else if $.IsSection }}{{ if eq .URL (print "/" $.Section "/") }} site-nav__link--active{{ end }}{{ else }}{{ if eq .URL $.RelPermalink }} site-nav__link--active{{ end }}{{ end }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+    <hr class="site-header__divider">
+  </div>
+</header>
