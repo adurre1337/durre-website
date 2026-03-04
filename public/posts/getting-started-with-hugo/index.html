@@ -15,6 +15,7 @@
   <div class="container">
     <h1 class="site-title">
       <a href="http://localhost:1313/" class="site-title__text">Durre</a>
+      <span class="site-title__alt">close this World / open the Next</span>
     </h1>
     <nav class="site-nav" aria-label="Main navigation">
       <ul class="site-nav__list">
@@ -92,5 +93,17 @@
 </footer>
 
   </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var vw = document.documentElement.clientWidth;
+      document.querySelectorAll('*').forEach(function (el) {
+        if (el.getBoundingClientRect().right > vw) {
+          el.style.outline = '3px solid red';
+          console.log('OVERFLOW:', el.tagName, el.className, 'right=', el.getBoundingClientRect().right, 'vw=', vw);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

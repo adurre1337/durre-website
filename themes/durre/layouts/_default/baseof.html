@@ -19,5 +19,17 @@
     </main>
     {{ partial "footer.html" . }}
   </div>
+  <!-- DEBUG: remove this script once overflow element is identified -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var vw = document.documentElement.clientWidth;
+      document.querySelectorAll('*').forEach(function (el) {
+        if (el.getBoundingClientRect().right > vw) {
+          el.style.outline = '3px solid red';
+          console.log('OVERFLOW:', el.tagName, el.className, 'right=', el.getBoundingClientRect().right, 'vw=', vw);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
