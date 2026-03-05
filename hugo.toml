@@ -29,3 +29,7 @@ theme = 'durre'
     name = 'Contact'
     pageRef = '/contact'
     weight = 40
+  [[menus.main]]
+    name = '???'
+    pageRef = '/mystery'
+    weight = 50

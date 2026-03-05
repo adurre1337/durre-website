@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">{{ .Title }}</h1>
+  </header>
+
+  <section class="hangman">
+    <pre id="hm-scaffold" class="hm-scaffold"></pre>
+    <p id="hm-word" class="hm-word"></p>
+    <p id="hm-wrong" class="hm-wrong"></p>
+    <p id="hm-msg" class="hm-msg"></p>
+    <div id="hm-keyboard" class="hm-keyboard"></div>
+    <button class="hm-new" onclick="newGame()">[ new game ]</button>
+  </section>
+
+  <footer class="post__footer">
+    <a href="{{ "/" | relURL }}">[ &larr; back ]</a>
+  </footer>
+</article>
+
+<script src="{{ "js/hangman.js" | relURL }}"></script>
+{{ end }}

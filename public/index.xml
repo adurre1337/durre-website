@@ -16,6 +16,13 @@
       <description>&lt;p&gt;This was a deep, dark rabbit hole that I fell into while trying to migrate myself off of Gmail a few months ago and use something more personalized.&lt;/p&gt;&#xA;&lt;p&gt;I had worked with Porkbun somewhat in the past, and saw that they had integrated with Proton for email hosting, plus the cost of the &amp;ldquo;durre.net&amp;rdquo; domain was super cheap so using Porkbun was a no brainer. Once I got my email setup and through the slog of moving over important logins, I started poking around other product offerings and found that they also offer web hosting. I didn&amp;rsquo;t really have any ideas for what I would put on a website, but I figured it would be kinda cool to have one.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>???</title>
+      <link>http://localhost:1313/mystery/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mystery/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
@@ -27,7 +34,7 @@
       <link>http://localhost:1313/contact/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to hit me up if there are any questions or comments about the stuff I put out on here!&lt;/p&gt;&#xA;&lt;p&gt;Email: &lt;a href=&#34;mailto:alex@durre.net&#34;&gt;alex@durre.net&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I will typically respond within a couple of days.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to hit me up if there are any questions or comments about the stuff I put out on here! I will typically respond within a couple of days.&lt;/p&gt;&#xA;&lt;p&gt;Email: &lt;a href=&#34;mailto:alex@durre.net&#34;&gt;alex@durre.net&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

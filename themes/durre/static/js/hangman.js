@@ -116,13 +116,19 @@ function render() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const keyboard = document.getElementById("hm-keyboard");
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(l => {
-    const btn = document.createElement("button");
-    btn.textContent = l;
-    btn.className = "hm-key";
-    btn.dataset.letter = l;
-    btn.addEventListener("click", () => guess(l));
-    keyboard.appendChild(btn);
+  const rows = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
+  rows.forEach(row => {
+    const rowDiv = document.createElement("div");
+    rowDiv.className = "hm-keyboard__row";
+    row.split("").forEach(l => {
+      const btn = document.createElement("button");
+      btn.textContent = l;
+      btn.className = "hm-key";
+      btn.dataset.letter = l;
+      btn.addEventListener("click", () => guess(l));
+      rowDiv.appendChild(btn);
+    });
+    keyboard.appendChild(rowDiv);
   });
 
   document.addEventListener("keydown", e => {

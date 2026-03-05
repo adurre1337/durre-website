@@ -29,7 +29,7 @@
   {{ range $pages.ByDate.Reverse }}
   <li class="post-list__item">
     <div>
-      <time class="post-list__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>{{ if $.Sections }}<span class="post-list__sep"> // </span><span class="post-list__section">{{ .Parent.Title }}</span><span class="post-list__sep"> // </span>{{ end }}<span class="post-list__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+      <time class="post-list__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time><span class="post-list__sep"> // </span>{{ if $.Sections }}<span class="post-list__section">{{ .Parent.Title }}</span><span class="post-list__sep"> // </span>{{ end }}<span class="post-list__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
     </div>
   </li>
   {{ end }}
