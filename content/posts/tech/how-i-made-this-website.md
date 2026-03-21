@@ -20,21 +20,19 @@ So I had the groundwork for how I'd kick-off this website:
     Step 2. Get Claude Code installed and integrated into the Hugo project.
     Step 3. Push all this out to a GitHub repo for source control and CI/CD integration.
     Step 4. Publish the content to Porkbun's web hosting platform.
-(edit: this textbox looks pretty sweet, I do not like the scroll bar however)
-(edit edit: no scrollbar on mobile, better, but the text wrapping looks horrible)
 
 Seems simple enough, and honestly, it really was.
 
 After getting Claude installed I kind of paused and started researching into "Skills" that other people created for web design. 
-I didn't really want to just copy+paste other peoples' work (I can appreciate the irony here as I am using LLM to do all the webdev heavy lifting), plus I was curious to see if Claude would just.. work. So I ended up just prompting it directly. I let Claude know that this project was inteded to be a website developed using the Hugo platform. I wanted to start off simple with a generic pages for home, about, contact, and also a blog directory. I linked Claude to an example website whose design I liked, and off it went.
+I didn't really want to just copy+paste other peoples' work (I can appreciate the irony here as I am using LLM to do all the webdev heavy lifting), plus I was curious to see if Claude would work out of the box. So I ended up prompting it directly. I let Claude know that this project was inteded to be a website developed using the Hugo platform. I wanted to start off simple with a generic pages for home, about, contact, and also a blog directory. I linked Claude to an example website whose design I liked, and off it went.
 
-After about 5 minutes it had generated a fully functioning, decent-looking webpage. It had copied the syling almost exactly as the example webpage, but that's okay because I figured I could tweak the details later.
+After about 5 minutes it had generated a fully functioning, decent-looking webpage. It had copied the syling almost exactly as the example webpage, so I spent some time going back-and-forth with Claude on design updates. In my own opinion, if I'm going to use LLM for content generation there needs to be an expectation that I would shape the ouput into something more than what it had originally spit out (avoid the "slop" allegations). This also goes into really all LLM generation, we should be using it as a tool rather than a primary means of creation. This also includes being forthright with the usage of LLM in the creation process!
 
-I got the code committed and pushed to my repo successfully, and in less than a couple hours we had already reached the final step!
+Anyways, I got the code committed and pushed to my repo successfully, and in less than a couple hours we had already reached the final step!
 
-Naturally, as it had already done so much for me, I asked Claude to suggest a CI/CD workflow using Github Actions. Claude then generated the deploy workflow code and let me know all I had to do was define the necessary secrets in Github - sweet. Porkbun provides all that when you spin up the web server, so that was pretty straightforward.
+Naturally, as it had already done so much for me, I asked Claude to suggest a CI/CD workflow using Github Actions. Claude then generated the deploy workflow code and let me know all I had to do was define the necessary secrets in Github. Porkbun provides all that when you spin up the web server, so that was straightforward.
 
-First attempt failed, Claude had defined another folder for FTP'ing the public content. Simple fix, just deploy the public content to './', the root directory on the web server. Quick change, and I had a fully functioning website.
+Our first attempt failed, Claude had defined another folder for FTP'ing the public content. Simple fix, just deploy the public content to the root directory on the web server. After a quick change, and I had a fully functioning website.
 
 All in all, this took me about 3 hours from getting my environment stood up to working with Claude and getting my "artistic vision" published to the World Wide Web. Pretty good timing considering it would have been weeks if not months of me playing with CSS and HTML to get this far.
 
