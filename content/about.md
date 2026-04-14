@@ -8,6 +8,6 @@ hide_meta: true
 
 ## Hello, I'm Alex Durre
 
-I'm a passionate creator, writer, consumer, and professional fixer-of-printers. This is my space where I share my thoughts, projects, and experiences.
+This is my website, welcome! I use this page to share my thoughts and projects.
 
 Feel free to reach out through the [contact page](/contact).
